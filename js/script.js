@@ -46,7 +46,22 @@ function pasangToggle(pemilih, teksBuka, teksTutup) {
 
 
 // ===== BAGIAN OPERATOR 1 (Beranda) =====
+const teksSapaan = document.getElementById("sapaan");
+if (teksSapaan) {
+  const jam = new Date().getHours();
+  let sapaan = "Selamat malam";
+  if (jam >= 4 && jam < 11) {
+    sapaan = "Selamat pagi";
+  } else if (jam >= 11 && jam < 15) {
+    sapaan = "Selamat siang";
+  } else if (jam >= 15 && jam < 18) {
+    sapaan = "Selamat sore";
+  }
+  teksSapaan.textContent = sapaan + ", selamat datang di Website Prodi!";
+}
 
+// Tombol "Selengkapnya" pada kartu informasi beranda
+pasangToggle(".tombol-selengkapnya", "Selengkapnya", "Tutup");
 
 // ===== BAGIAN OPERATOR 2 (Tentang) =====
 
