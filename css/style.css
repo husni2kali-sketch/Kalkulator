@@ -36,7 +36,6 @@ body {
 }
 
 #tombol-tema:focus-visible,
-.tombol-kembali:focus-visible,
 .tombol:focus-visible,
 .menu a:focus-visible {
   outline: 3px solid #f5b942;
@@ -48,19 +47,6 @@ main h2 { margin-bottom: 12px; color: #1f3864; }
 main h3 { margin-bottom: 8px; }
 section { margin-bottom: 32px; }
 p { margin-bottom: 10px; }
-
-/* Tombol kembali ke index (dipakai semua halaman kecuali index) */
-.tombol-kembali {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 16px;
-  border: 2px solid #1f3864;
-  border-radius: 6px;
-  color: #1f3864;
-  text-decoration: none;
-  font-weight: bold;
-}
-.tombol-kembali:hover { background-color: #1f3864; color: white; }
 
 /* Tombol umum */
 .tombol {
@@ -107,8 +93,6 @@ body.gelap main h2 { color: #9fc0ff; }
 body.gelap .card { background-color: #1c2538; border-color: #33415c; }
 body.gelap .card h3 { color: #9fc0ff; }
 body.gelap .detail { border-top-color: #33415c; }
-body.gelap .tombol-kembali { border-color: #9fc0ff; color: #9fc0ff; }
-body.gelap .tombol-kembali:hover { background-color: #9fc0ff; color: #121826; }
 
 @media (max-width: 600px) {
   .navbar { flex-direction: column; }
