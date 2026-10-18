@@ -52,3 +52,41 @@ function pasangToggle(pemilih, teksBuka, teksTutup) {
 
 
 // ===== BAGIAN OPERATOR 3 (Kontak) =====
+const tombolKirim = document.getElementById("tombol-kirim");
+if (tombolKirim) {
+  const kolomPesan = document.getElementById("pesan");
+  const hitungPesan = document.getElementById("hitung-pesan");
+  const batasPesan = 300;
+
+  // Penghitung karakter pada kolom pesan
+  kolomPesan.addEventListener("input", function () {
+    hitungPesan.textContent = kolomPesan.value.length + " / " + batasPesan;
+  });
+
+  tombolKirim.addEventListener("click", function () {
+    const nama = document.getElementById("nama").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const pesan = kolomPesan.value.trim();
+    const status = document.getElementById("status-form");
+    const polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    status.className = "galat";
+
+    if (nama === "" || email === "" || pesan === "") {
+      status.textContent = "Semua kolom wajib diisi.";
+    } else if (!polaEmail.test(email)) {
+      status.textContent = "Format email tidak valid. Contoh: nama@contoh.com";
+    } else if (pesan.length < 10) {
+      status.textContent = "Pesan minimal 10 karakter.";
+    } else if (pesan.length > batasPesan) {
+      status.textContent = "Pesan maksimal " + batasPesan + " karakter.";
+    } else {
+      status.className = "sukses";
+      status.textContent = "Terima kasih, " + nama + ". Pesan Anda diterima.";
+      document.getElementById("nama").value = "";
+      document.getElementById("email").value = "";
+      kolomPesan.value = "";
+      hitungPesan.textContent = "0 / " + batasPesan;
+    }
+  });
+}

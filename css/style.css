@@ -136,3 +136,35 @@ body.gelap .tombol-kembali:hover { background-color: #9fc0ff; color: #121826; }
 
 
 /* ===== BAGIAN OPERATOR 3 (Kontak) ===== */
+
+.info-kontak { list-style: none; }
+.info-kontak li { padding: 6px 0; }
+
+.form-kontak {
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+.form-kontak label { display: block; margin-top: 12px; font-weight: bold; }
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.form-kontak .tombol { margin-top: 16px; }
+.hitung-pesan { font-size: 13px; color: #666; text-align: right; }
+#status-form { margin-top: 12px; font-weight: bold; }
+#status-form.sukses { color: #1b7f3b; }
+#status-form.galat { color: #c0392b; }
+body.gelap .form-kontak { background-color: #1c2538; border-color: #33415c; }
+body.gelap .form-kontak input,
+body.gelap .form-kontak textarea { background-color: #121826; color: #e8e8e8; border-color: #4a5a7a; }
+body.gelap .hitung-pesan { color: #b8c3d9; }
+body.gelap #status-form.sukses { color: #5fd38a; }
+body.gelap #status-form.galat { color: #ff8a7a; }
