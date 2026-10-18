@@ -43,8 +43,8 @@ function pasangToggle(pemilih, teksBuka, teksTutup) {
 }
 
 // ===== BAGIAN PM (Index) =====
-
-
+// Tombol "Lihat Detail" pada kartu biodata perorangan
+pasangToggle(".tombol-detail", "Lihat Detail", "Sembunyikan Detail");
 // ===== BAGIAN OPERATOR 1 (Beranda) =====
 
 
