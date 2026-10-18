@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Website Prodi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Website Prodi</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html" class="aktif">Kontak</a></li>
+      </ul>
+    </nav>
+    <button id="tombol-tema" type="button">Mode Gelap</button>
+  </header>
+
+  <!-- Konten utama -->
+  <main>
+    <h2>Kontak</h2>
+
+    <section>
+      <h3>Informasi Kontak</h3>
+      <ul class="info-kontak">
+        <li><strong>Alamat:</strong> Politeknik Negeri Cilacap, Cilacap, Jawa Tengah</li>
+        <li><strong>Email:</strong> pnc123@gmail.com</li>
+        <li><strong>Telepon:</strong> 088298123456</li>
+      </ul>
+    </section>
+
+    <section class="form-kontak">
+      <h2>Kirim Pesan</h2>
+
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" placeholder="Nama Anda" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email@contoh.com" />
+
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" rows="4" maxlength="300"></textarea>
+      <p id="hitung-pesan" class="hitung-pesan">0 / 300</p>
+
+      <button type="button" id="tombol-kirim" class="tombol">Kirim</button>
+      <p id="status-form"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Program Studi Teknik Informatika, Politeknik Negeri Cilacap</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
