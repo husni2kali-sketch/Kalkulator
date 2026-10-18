@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda | Website Prodi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Website Prodi</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="beranda.html" class="aktif">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button id="tombol-tema" type="button">Mode Gelap</button>
+  </header>
+
+  <!-- Konten utama -->
+  <main>
+    <h2>Beranda</h2>
+    <p id="sapaan" class="sapaan">Selamat datang di Website Prodi!</p>
+
+    <!-- Hero / banner -->
+    <section class="hero">
+      <h2>Program Studi Teknik Informatika</h2>
+      <p>Belajar membangun website dan aplikasi dari dasar hingga siap kerja.</p>
+    </section>
+
+    <!-- Informasi singkat -->
+    <section>
+      <h2>Informasi Singkat</h2>
+      <p>Teknik Informatika (sering juga disebut Informatics Engineering atau Computer Science di beberapa institusi) adalah disiplin ilmu yang mempelajari prinsip-prinsip ilmu komputer, analisis matematis, serta penerapan rekayasa (engineering) untuk merancang, mengembangkan, menguji, dan mengevaluasi perangkat lunak (software) dan sistem operasi.</p>
+    </section>
+
+    <!-- Kartu informasi -->
+    <section>
+      <div class="grid-card">
+        <article class="card">
+          <h3>Pembelajaran</h3>
+          <p>Perkuliahan teori dan praktikum yang berjalan seimbang.</p>
+          <button type="button" class="tombol tombol-selengkapnya" data-target="info-pembelajaran">Selengkapnya</button>
+          <div id="info-pembelajaran" class="detail tersembunyi">
+            <p>[Isi penjelasan pembelajaran, misalnya mata kuliah utama dan metode praktikum]</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Fasilitas</h3>
+          <p>Laboratorium komputer dan jaringan untuk menunjang praktik.</p>
+          <button type="button" class="tombol tombol-selengkapnya" data-target="info-fasilitas">Selengkapnya</button>
+          <div id="info-fasilitas" class="detail tersembunyi">
+            <p>[Isi penjelasan fasilitas program studi]</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Prospek Karier</h3>
+          <p>Lulusan dapat bekerja di bidang pengembangan perangkat lunak dan jaringan.</p>
+          <button type="button" class="tombol tombol-selengkapnya" data-target="info-karier">Selengkapnya</button>
+          <div id="info-karier" class="detail tersembunyi">
+            <p>[Isi penjelasan prospek karier lulusan]</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Program Studi Teknik Informatika, Politeknik Negeri Cilacap</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
