@@ -64,7 +64,8 @@ if (teksSapaan) {
 pasangToggle(".tombol-selengkapnya", "Selengkapnya", "Tutup");
 
 // ===== BAGIAN OPERATOR 2 (Tentang) =====
-
+// Akordeon visi, misi, dan teknologi
+pasangToggle(".tombol-akordeon", "Tampilkan", "Sembunyikan");
 
 // ===== BAGIAN OPERATOR 3 (Kontak) =====
 const tombolKirim = document.getElementById("tombol-kirim");
