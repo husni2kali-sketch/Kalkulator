@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang | Website Prodi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Website Prodi</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="tentang.html" class="aktif">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button id="tombol-tema" type="button">Mode Gelap</button>
+  </header>
+
+  <!-- Konten utama -->
+  <main>
+    <h2>Tentang</h2>
+
+    <section>
+      <h3>Deskripsi Website</h3>
+      <p>Program Studi Teknik Informatika merupakan program studi yang menjadi syarat di dalam pendirian Politeknik Cilacap melalui Keputusan Menteri Pendidikan Nasional Republik Indonesia Nomor : 125D/O/2008 Tentang Pemberian Ijin Penyelenggaraan Program Studi dan Pendirian Politeknik Cilacap di Cilacap di Selenggarakan oleh Yayasan Dharmaning Kawula Cilacap di Cilacap Jawa Tengah.</p>
+    </section>
+
+    <section>
+      <h3>Program Studi D3 Teknik Informatika</h3>
+      <p>Merupakan program pendidikan vokasi yang dirancang untuk menghaislkan lulusan yang memiliki keterampilan praktis dibidang teknologi informasi. Program studi ini berfokus pada penguasaan teknologi komputer, pemograman, pengembangan perangkat lunak, jaringan komputer, dan sistem basis data.</p>
+    </section>
+
+    <!-- Akordeon: klik tombol untuk menampilkan isi -->
+    <section>
+      <div class="akordeon-item">
+        <button type="button" class="tombol tombol-akordeon" data-target="isi-visi">Tampilkan</button>
+        <div id="isi-visi" class="akordeon-isi tersembunyi">
+          <h3>Visi</h3>
+          <p>“Menjadi program studi unggulan dalam pengkajian dan penerapan IPTEK pada bidang Informatika dan mampu berkontribusi bagi masyarakat di tingkat nasional.”</p>
+        </div>
+      </div>
+
+      <div class="akordeon-item">
+        <button type="button" class="tombol tombol-akordeon" data-target="isi-misi">Tampilkan</button>
+        <div id="isi-misi" class="akordeon-isi tersembunyi">
+          <h3>Misi</h3>
+          <ul>
+            <li>Menyelenggarakan pendidikan di bidang informatika untuk menghasilkan tenaga profesional yang adaptif terhadap perkembangan teknologi.</li>
+            <li>Melaksanakan penelitian dasar dan/atau terapan di bidang informatika.</li>
+            <li>Memberikan pelayanan dan pengabdian kepada masyarakat dalam bentuk produksi dan jasa berbasis informatika.</li>
+            <li>Membentuk lulusan yang memiliki jiwa kewirausahaan berbasis teknologi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="akordeon-item">
+        <button type="button" class="tombol tombol-akordeon" data-target="isi-teknologi">Tampilkan</button>
+        <div id="isi-teknologi" class="akordeon-isi tersembunyi">
+          <h3>Teknologi yang Digunakan</h3>
+          <ul>
+            <li>HTML untuk struktur halaman</li>
+            <li>CSS untuk tampilan</li>
+            <li>JavaScript untuk interaksi</li>
+            <li>Git dan GitHub untuk kolaborasi tim</li>
+            <li>GitHub Pages untuk publikasi website</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Program Studi Teknik Informatika, Politeknik Negeri Cilacap</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
