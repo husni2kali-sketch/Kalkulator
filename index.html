@@ -23,8 +23,113 @@
 
   <!-- Konten utama -->
   <main>
-    <h2>Index</h2>
-    <!-- Isi halaman dikerjakan ketua pada branch fitur-index -->
+    <section class="hero">
+      <h2>Website Informasi Program Studi</h2>
+      <p>Project kelompok Pemrograman Web Dasar, Politeknik Negeri Cilacap</p>
+    </section>
+
+    <!-- BIODATA KELOMPOK -->
+    <section id="biodata-kelompok">
+      <h2>Biodata Kelompok</h2>
+      <table class="tabel-biodata">
+        <tr>
+          <th>Nama Kelompok</th>
+          <td>[Isi nama kelompok]</td>
+        </tr>
+        <tr>
+          <th>Program Studi</th>
+          <td>[Isi program studi]</td>
+        </tr>
+        <tr>
+          <th>Kelas</th>
+          <td>[Isi kelas]</td>
+        </tr>
+        <tr>
+          <th>Mata Kuliah</th>
+          <td>Pemrograman Web Dasar</td>
+        </tr>
+        <tr>
+          <th>Ketua (Project Manager)</th>
+          <td>[Isi nama ketua]</td>
+        </tr>
+        <tr>
+          <th>Anggota</th>
+          <td>[Nama anggota 1], [Nama anggota 2], [Nama anggota 3]</td>
+        </tr>
+        <tr>
+          <th>Repository GitHub</th>
+          <td>[Isi URL repository]</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- BIODATA PERORANGAN -->
+    <section id="biodata-perorangan">
+      <h2>Biodata Perorangan</h2>
+      <div class="grid-card">
+
+        <!-- Kartu 1: Ketua / Project Manager -->
+        <article class="card kartu-biodata">
+          <div class="foto-biodata">Foto</div>
+          <h3>[Nama ketua]</h3>
+          <p class="peran">Ketua / Project Manager</p>
+          <button type="button" class="tombol tombol-detail" data-target="detail-ketua">Lihat Detail</button>
+          <div id="detail-ketua" class="detail tersembunyi">
+            <p><strong>NIM:</strong> [Isi NIM]</p>
+            <p><strong>Kelas:</strong> [Isi kelas]</p>
+            <p><strong>Tugas:</strong> Kerangka project, index.html, review dan merge, GitHub Pages</p>
+            <p><strong>Username GitHub:</strong> [Isi username]</p>
+            <p><strong>Email:</strong> [Isi email]</p>
+          </div>
+        </article>
+
+        <!-- Kartu 2: Anggota 1 -->
+        <article class="card kartu-biodata">
+          <div class="foto-biodata">Foto</div>
+          <h3>[Nama anggota 1]</h3>
+          <p class="peran">Anggota, Halaman Beranda</p>
+          <button type="button" class="tombol tombol-detail" data-target="detail-anggota1">Lihat Detail</button>
+          <div id="detail-anggota1" class="detail tersembunyi">
+            <p><strong>NIM:</strong> [Isi NIM]</p>
+            <p><strong>Kelas:</strong> [Isi kelas]</p>
+            <p><strong>Tugas:</strong> beranda.html</p>
+            <p><strong>Username GitHub:</strong> [Isi username]</p>
+            <p><strong>Email:</strong> [Isi email]</p>
+          </div>
+        </article>
+
+        <!-- Kartu 3: Anggota 2 -->
+        <article class="card kartu-biodata">
+          <div class="foto-biodata">Foto</div>
+          <h3>[Nama anggota 2]</h3>
+          <p class="peran">Anggota, Halaman Tentang</p>
+          <button type="button" class="tombol tombol-detail" data-target="detail-anggota2">Lihat Detail</button>
+          <div id="detail-anggota2" class="detail tersembunyi">
+            <p><strong>NIM:</strong> [Isi NIM]</p>
+            <p><strong>Kelas:</strong> [Isi kelas]</p>
+            <p><strong>Tugas:</strong> tentang.html</p>
+            <p><strong>Username GitHub:</strong> [Isi username]</p>
+            <p><strong>Email:</strong> [Isi email]</p>
+          </div>
+        </article>
+
+        <!-- Kartu 4: Anggota 3 -->
+        <article class="card kartu-biodata">
+          <div class="foto-biodata">Foto</div>
+          <h3>[Nama anggota 3]</h3>
+          <p class="peran">Anggota, Halaman Kontak</p>
+          <button type="button" class="tombol tombol-detail" data-target="detail-anggota3">Lihat Detail</button>
+          <div id="detail-anggota3" class="detail tersembunyi">
+            <p><strong>NIM:</strong> [Isi NIM]</p>
+            <p><strong>Kelas:</strong> [Isi kelas]</p>
+            <p><strong>Tugas:</strong> kontak.html dan validasi form</p>
+            <p><strong>Username GitHub:</strong> [Isi username]</p>
+            <p><strong>Email:</strong> [Isi email]</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
