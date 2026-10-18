@@ -1,0 +1,138 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f4f6fb;
+  line-height: 1.6;
+}
+
+/* ===== BAGIAN UMUM (PM) ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: #1f3864;
+  color: white;
+}
+
+.logo { font-size: 22px; }
+
+.menu { display: flex; gap: 24px; list-style: none; }
+.menu a { color: white; text-decoration: none; padding-bottom: 2px; }
+.menu a:hover { text-decoration: underline; }
+.menu a.aktif { border-bottom: 2px solid white; font-weight: bold; }
+
+#tombol-tema {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #1f3864;
+  cursor: pointer;
+}
+
+#tombol-tema:focus-visible,
+.tombol-kembali:focus-visible,
+.tombol:focus-visible,
+.menu a:focus-visible {
+  outline: 3px solid #f5b942;
+  outline-offset: 2px;
+}
+
+main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+main h2 { margin-bottom: 12px; color: #1f3864; }
+main h3 { margin-bottom: 8px; }
+section { margin-bottom: 32px; }
+p { margin-bottom: 10px; }
+
+/* Tombol kembali ke index (dipakai semua halaman kecuali index) */
+.tombol-kembali {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border: 2px solid #1f3864;
+  border-radius: 6px;
+  color: #1f3864;
+  text-decoration: none;
+  font-weight: bold;
+}
+.tombol-kembali:hover { background-color: #1f3864; color: white; }
+
+/* Tombol umum */
+.tombol {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f3864;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tombol:hover { background-color: #2c4f8f; }
+
+/* Kartu */
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+.card h3 { color: #1f3864; }
+.card img { width: 100%; border-radius: 6px; margin-bottom: 10px; }
+
+/* Konten yang bisa ditampilkan / disembunyikan lewat JavaScript */
+.tersembunyi { display: none; }
+.detail { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #bbb; }
+
+footer {
+  padding: 20px 32px;
+  text-align: center;
+  background-color: #1f3864;
+  color: white;
+}
+
+/* Mode gelap (dipasang oleh JavaScript) */
+body.gelap { background-color: #121826; color: #e8e8e8; }
+body.gelap main h2 { color: #9fc0ff; }
+body.gelap .card { background-color: #1c2538; border-color: #33415c; }
+body.gelap .card h3 { color: #9fc0ff; }
+body.gelap .detail { border-top-color: #33415c; }
+body.gelap .tombol-kembali { border-color: #9fc0ff; color: #9fc0ff; }
+body.gelap .tombol-kembali:hover { background-color: #9fc0ff; color: #121826; }
+
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; }
+  .menu { gap: 14px; flex-wrap: wrap; justify-content: center; }
+}
+
+/* Banner (dipakai index dan beranda) */
+.hero {
+  padding: 40px 24px;
+  border-radius: 8px;
+  background-color: #1f3864;
+  color: white;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.hero h2 { color: white; font-size: 28px; }
+
+/* ===== BAGIAN PM (Index) ===== */
+
+
+/* ===== BAGIAN OPERATOR 1 (Beranda) ===== */
+
+
+/* ===== BAGIAN OPERATOR 2 (Tentang) ===== */
+
+
+/* ===== BAGIAN OPERATOR 3 (Kontak) ===== */
