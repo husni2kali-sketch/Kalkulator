@@ -49,6 +49,7 @@ function pasangToggle(pemilih, teksBuka, teksTutup) {
 
 
 // ===== BAGIAN OPERATOR 2 (Tentang) =====
-
+// Akordeon visi, misi, dan teknologi
+pasangToggle(".tombol-akordeon", "Tampilkan", "Sembunyikan");
 
 // ===== BAGIAN OPERATOR 3 (Kontak) =====

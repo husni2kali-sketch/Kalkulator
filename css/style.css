@@ -133,6 +133,17 @@ body.gelap .tombol-kembali:hover { background-color: #9fc0ff; color: #121826; }
 
 
 /* ===== BAGIAN OPERATOR 2 (Tentang) ===== */
+.akordeon-item { margin-bottom: 12px; }
+.akordeon-item .tombol { width: 100%; text-align: left; }
+.akordeon-isi {
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  background-color: white;
+}
+.akordeon-isi ul { margin-left: 20px; }
+body.gelap .akordeon-isi { background-color: #1c2538; border-color: #33415c; }
 
 
 /* ===== BAGIAN OPERATOR 3 (Kontak) ===== */
