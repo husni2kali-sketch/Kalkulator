@@ -1,2 +1,2 @@
--PM          :Karfu`an Husni Agus Riady
--Operator    :Asmoro Nur Husein, Galih Herdiawan, Queen Freshtyana
+#PM          :Karfu`an Husni Agus Riady
+#Operator    :Asmoro Nur Husein, Galih Herdiawan, Queen Freshtyana
